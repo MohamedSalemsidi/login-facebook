@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+     Roboto, Oxygen, Ubuntu, Cantarell,
+     'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: rgb(173, 172, 171);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    body {
+        flex-direction: column;
+        height: 1000px;
+        justify-content: space-around;
+    }
+}
+.photoes {
+    margin-bottom: 120px;
+}
+@media (max-width: 767px) {
+    .photoes {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+h2 {
+    color: blue;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: -2px;
+    margin-bottom: 3px;
+}
+.photoes h4{
+    color: rgb(37, 37, 37);
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+.photoes p {
+    margin-bottom: 20px;
+    color: rgb(80, 80, 80);
+}
+.photoes .image {
+    background-color: white;
+    width: 120px;
+    border-radius: 5px;
+}
+.photoes  img {
+    max-width: 100%;
+    width: 120px;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+.photoes .image h5 {
+    padding: 10px 20px;
+    color: rgb(80, 80, 80);
+    font-size: 15px;
+    text-align: center;
+}
+.photoes .add {
+    display: flex;
+    justify-content: space-between;
+}
+.photoes .newAcount {
+    background-color: white;
+    width: 120px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.photoes .newAcount img {
+    max-width: 100%;
+    width: 120px;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    padding: 40px;
+}
+.photoes .add .newAcount div{
+    display: inline-block;
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    left: 35%;
+    top: 35%;
+    cursor: pointer;
+
+}
+.photoes .add .newAcount div span {
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    position: absolute;
+    left: 5px;
+    bottom: 4px;
+    cursor: pointer;
+}
+.photoes .newAcount h5{
+    padding: 10px 20px;
+    color: rgb(104, 104, 168);
+    cursor: pointer;
+}
+
+/* Start Logins section  */
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+}
+.login .info {
+    background-color: white;
+    padding: 20px;
+    height: 88%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0px 6px 11px 0px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+.firstB {
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: bold;
+}
+.info a {
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(179, 174, 174);
+    padding: 0 0 20px;
+}
+.info .secondB {
+    width: 60%;
+    margin: auto;
+    color: white;
+    background-color: green;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.login .footer a {
+    font-weight: 700;
+    margin-right: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .login {
+        margin-bottom: 50px;
+    }
+}
+
+/* Start Logins section  */
